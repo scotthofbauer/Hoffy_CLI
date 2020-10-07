@@ -4,9 +4,7 @@ export default class Hello extends Command {
   static description = 'describe the command here'
 
   static examples = [
-    `$ hoffy hello
-hello world from ./src/hello.ts!
-`,
+    `$ hoffy hello hello world from ./src/hello.ts!`,
   ]
 
   static flags = {
