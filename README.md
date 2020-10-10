@@ -28,8 +28,25 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
+* [`hoffy goodbye [FILE]`](#hoffy-goodbye-file)
 * [`hoffy hello [FILE]`](#hoffy-hello-file)
 * [`hoffy help [COMMAND]`](#hoffy-help-command)
+
+## `hoffy goodbye [FILE]`
+
+describe the command here
+
+```
+USAGE
+  $ hoffy goodbye [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+```
+
+_See code: [src/commands/goodbye.ts](https://github.com/scotthofbauer/hoffy_cli/blob/v1.0.0/src/commands/goodbye.ts)_
 
 ## `hoffy hello [FILE]`
 
@@ -45,8 +62,7 @@ OPTIONS
   -n, --name=name  name to print
 
 EXAMPLE
-  $ hoffy hello
-  hello world from ./src/hello.ts!
+  $ hoffy hello hello world from ./src/hello.ts!
 ```
 
 _See code: [src/commands/hello.ts](https://github.com/scotthofbauer/hoffy_cli/blob/v1.0.0/src/commands/hello.ts)_
