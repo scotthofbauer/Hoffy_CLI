@@ -31,10 +31,11 @@ USAGE
 * [`hoffy goodbye [FILE]`](#hoffy-goodbye-file)
 * [`hoffy hello [FILE]`](#hoffy-hello-file)
 * [`hoffy help [COMMAND]`](#hoffy-help-command)
+* [`hoffy randomFact [FILE]`](#hoffy-randomfact-file)
 
 ## `hoffy goodbye [FILE]`
 
-describe the command here
+say goodbye with name
 
 ```
 USAGE
@@ -50,7 +51,7 @@ _See code: [src/commands/goodbye.ts](https://github.com/scotthofbauer/hoffy_cli/
 
 ## `hoffy hello [FILE]`
 
-describe the command here
+say hello with name
 
 ```
 USAGE
@@ -62,7 +63,7 @@ OPTIONS
   -n, --name=name  name to print
 
 EXAMPLE
-  $ hoffy hello hello world from ./src/hello.ts!
+  $ hoffy hello --name <insert name>
 ```
 
 _See code: [src/commands/hello.ts](https://github.com/scotthofbauer/hoffy_cli/blob/v1.0.0/src/commands/hello.ts)_
@@ -83,4 +84,20 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.0/src/commands/help.ts)_
+
+## `hoffy randomFact [FILE]`
+
+describe the command here
+
+```
+USAGE
+  $ hoffy randomFact [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+```
+
+_See code: [src/commands/randomFact.ts](https://github.com/scotthofbauer/hoffy_cli/blob/v1.0.0/src/commands/randomFact.ts)_
 <!-- commandsstop -->

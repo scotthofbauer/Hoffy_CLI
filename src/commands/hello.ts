@@ -1,10 +1,10 @@
 import {Command, flags} from '@oclif/command'
 
 export default class Hello extends Command {
-  static description = 'describe the command here'
+  static description = 'say hello with name'
 
   static examples = [
-    `$ hoffy hello hello world from ./src/hello.ts!`,
+    `$ hoffy hello --name <insert name>`,
   ]
 
   static flags = {

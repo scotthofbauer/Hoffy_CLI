@@ -1,7 +1,7 @@
 import {Command, flags} from '@oclif/command'
 
 export default class Goodbye extends Command {
-  static description = 'describe the command here'
+  static description = 'say goodbye with name'
 
   static flags = {
     help: flags.help({char: 'h'}),
