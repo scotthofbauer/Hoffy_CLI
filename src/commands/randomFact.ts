@@ -16,7 +16,9 @@ export default class RandomFact extends Command {
     "Odontophobia is the fear of teeth.",
     "The 57 on Heinz ketchup bottles represents the number of varieties of pickles the company once had.",
     "In the early days of the telephone, operators would pick up a call and use the phrase, 'Well, are you there?'. It wasn't until 1895 that someone suggested answering the phone with the phrase 'number please?'",
-    "The surface area of an average-sized brick is 79 cm squared."
+    "The surface area of an average-sized brick is 79 cm squared.",
+    "According to suicide statistics, Monday is the favored day for self-destruction.",
+    "Cats sleep 16 to 18 hours per day."
   ];
   static args = [{name: 'file'}]
 
