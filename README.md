@@ -31,6 +31,7 @@ USAGE
 * [`hoffy goodbye [FILE]`](#hoffy-goodbye-file)
 * [`hoffy hello [FILE]`](#hoffy-hello-file)
 * [`hoffy help [COMMAND]`](#hoffy-help-command)
+* [`hoffy multiply [FILE]`](#hoffy-multiply-file)
 * [`hoffy randomFact [FILE]`](#hoffy-randomfact-file)
 
 ## `hoffy goodbye [FILE]`
@@ -85,18 +86,32 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.0/src/commands/help.ts)_
 
-## `hoffy randomFact [FILE]`
+## `hoffy multiply [FILE]`
 
 describe the command here
+
+```
+USAGE
+  $ hoffy multiply [FILE]
+
+OPTIONS
+  -f, --force
+  -h, --help       show CLI help
+  -n, --name=name  name to print
+```
+
+_See code: [src/commands/multiply.ts](https://github.com/scotthofbauer/hoffy_cli/blob/v1.0.0/src/commands/multiply.ts)_
+
+## `hoffy randomFact [FILE]`
+
+get a random fact
 
 ```
 USAGE
   $ hoffy randomFact [FILE]
 
 OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
+  -h, --help  show CLI help
 ```
 
 _See code: [src/commands/randomFact.ts](https://github.com/scotthofbauer/hoffy_cli/blob/v1.0.0/src/commands/randomFact.ts)_

@@ -25,8 +25,5 @@ export default class RandomFact extends Command {
   async run() {
     const fact = RandomFact.facts[Math.floor(Math.random()*RandomFact.facts.length)]
     this.log(fact);
-
-
-
   }
 }
