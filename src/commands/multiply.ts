@@ -12,16 +12,17 @@ export default class Multiply extends Command {
   }
 
   static args = [
-    {
-      name: 'file'
-    }
+    {name: 'num1'},
+    {name: 'num2'}
   ]
+
 
   async run() {
     const {args, flags} = this.parse(Multiply)
+    const answer = args.num1 * args.num2;
 
     const name = flags.name ?? 'world'
-    this.log(`hello ${name} from /Users/glynnhofbauer/Documents/hoffy_cli/src/commands/multiply.ts`)
+    this.log(`Answer: ${answer}`);
     if (args.file && flags.force) {
       this.log(`you input --force and --file: ${args.file}`)
     }
