@@ -1,30 +1,29 @@
 import {Command, flags} from '@oclif/command'
 
 export default class Multiply extends Command {
-  static description = 'multiply two numbers'
+  static description = 'multiply two numbers with an optional rounding digit <num1> <num2> optional<Rounding digit>'
 
   static flags = {
     help: flags.help({char: 'h'}),
-    // flag with a value (-n, --name=VALUE)
-    name: flags.string({char: 'n', description: 'name to print'}),
-    // // flag with no value (-f, --force)
-    force: flags.boolean({char: 'f'}),
   }
 
   static args = [
     {name: 'num1'},
-    {name: 'num2'}
+    {name: 'num2'},
+    {
+      name: 'round',
+      required: false,
+    }
   ]
 
 
   async run() {
-    const {args, flags} = this.parse(Multiply)
-    const answer = args.num1 * args.num2;
-
-    const name = flags.name ?? 'world'
-    this.log(`Answer: ${answer}`);
-    if (args.file && flags.force) {
-      this.log(`you input --force and --file: ${args.file}`)
+    const {args} = this.parse(Multiply)
+    let answer = args.num1 * args.num2;
+    if(args.round){
+      answer = parseFloat(answer.toFixed(args.round));
     }
+    
+    this.log(`Answer: ${answer}`);
   }
 }
