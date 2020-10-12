@@ -1,4 +1,5 @@
 import {Command, flags} from '@oclif/command'
+import cli from 'cli-ux'
 
 export default class Multiply extends Command {
   static description = 'multiply two numbers with an optional rounding digit <num1> <num2> optional<Rounding digit>'
@@ -18,12 +19,17 @@ export default class Multiply extends Command {
 
 
   async run() {
+
+    const test = await cli.prompt("Write something?");
+
     const {args} = this.parse(Multiply)
     let answer = args.num1 * args.num2;
+
+
     if(args.round){
       answer = parseFloat(answer.toFixed(args.round));
     }
     
-    this.log(`Answer: ${answer}`);
+    this.log(`Answer: ${answer}, test: ${test}`);
   }
 }
