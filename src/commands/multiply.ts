@@ -17,19 +17,39 @@ export default class Multiply extends Command {
     }
   ]
 
+  async noArgs() {
+    const test = await cli.prompt("You didn't add arguments dumbass");
+    return 1;
+  }
+  async getMissingNumber() {
+    const num = await cli.prompt("Input a number");
+    return num;
+  }
+
 
   async run() {
 
-    const test = await cli.prompt("Write something?");
 
     const {args} = this.parse(Multiply)
-    let answer = args.num1 * args.num2;
+    let answer;
+    let num1 = args.num1;
+    let num2 = args.num2;
+
+  
+    if(!num1 && !num2){
+      answer = await this.noArgs();
+    }else if(!args.num1 && args.num2 || args.num1 && !args.num2){
+      num1 = await this.getMissingNumber();
+    }
+
+    answer = args.num1 * args.num2;
+    
 
 
     if(args.round){
       answer = parseFloat(answer.toFixed(args.round));
     }
     
-    this.log(`Answer: ${answer}, test: ${test}`);
+    this.log(`Answer: ${answer}`);
   }
 }
