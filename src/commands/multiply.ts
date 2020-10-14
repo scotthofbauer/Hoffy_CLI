@@ -39,6 +39,7 @@ export default class Multiply extends Command {
     if(!num1 && !num2){
       answer = await this.noArgs();
     }else if(!args.num1 && args.num2 || args.num1 && !args.num2){
+      console.log("testing");
       num1 = await this.getMissingNumber();
     }
 
