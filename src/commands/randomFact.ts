@@ -19,7 +19,8 @@ export default class RandomFact extends Command {
     "The surface area of an average-sized brick is 79 cm squared.",
     "According to suicide statistics, Monday is the favored day for self-destruction.",
     "Cats sleep 16 to 18 hours per day.",
-    "The most money ever paid for a cow in an auction was $1.3 million."
+    "The most money ever paid for a cow in an auction was $1.3 million.",
+    "The first person selected as the Time Magazine Man of the Year - Charles Lindbergh in 1927."
   ];
   static args = [{name: 'file'}]
 
