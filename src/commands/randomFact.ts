@@ -20,7 +20,8 @@ export default class RandomFact extends Command {
     "According to suicide statistics, Monday is the favored day for self-destruction.",
     "Cats sleep 16 to 18 hours per day.",
     "The most money ever paid for a cow in an auction was $1.3 million.",
-    "The first person selected as the Time Magazine Man of the Year - Charles Lindbergh in 1927."
+    "The first person selected as the Time Magazine Man of the Year - Charles Lindbergh in 1927.",
+    "On the new hundred dollar bill the time on the clock tower of Independence Hall is 4:10."
   ];
   static args = [{name: 'file'}]
 
