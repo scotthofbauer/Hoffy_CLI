@@ -23,7 +23,8 @@ export default class RandomFact extends Command {
     "The first person selected as the Time Magazine Man of the Year - Charles Lindbergh in 1927.",
     "On the new hundred dollar bill the time on the clock tower of Independence Hall is 4:10.",
     "Every year about 98% of the atoms in your body are replaced.",
-    "The international telephone dialing code for Antarctica is 672."
+    "The international telephone dialing code for Antarctica is 672.",
+    "The names of the two stone lions in front of the New York Public Library are Patience and Fortitude. They were named by then-mayor Fiorello LaGuardia."
   ];
   static args = [{name: 'file'}]
 
