@@ -24,7 +24,8 @@ export default class RandomFact extends Command {
     "On the new hundred dollar bill the time on the clock tower of Independence Hall is 4:10.",
     "Every year about 98% of the atoms in your body are replaced.",
     "The international telephone dialing code for Antarctica is 672.",
-    "The names of the two stone lions in front of the New York Public Library are Patience and Fortitude. They were named by then-mayor Fiorello LaGuardia."
+    "The names of the two stone lions in front of the New York Public Library are Patience and Fortitude. They were named by then-mayor Fiorello LaGuardia.",
+    "Lucy and Linus (who where brother and sister) had another little brother named Rerun. (He sometimes played left-field on Charlie Brown's baseball team, [when he could find it!])."
   ];
   static args = [{name: 'file'}]
 
